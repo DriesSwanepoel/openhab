@@ -1,4 +1,7 @@
 sitemap default label="Default Sitemap"
 {
-
+	Frame label="Dashboard"
+	{
+		Text item=TodaysDate icon="calendar"
+	}
 }

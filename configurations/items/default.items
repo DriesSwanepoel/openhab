@@ -1,0 +1,10 @@
+/* GROUPS */
+Group All
+Group gGroundFloor		(All)
+Group gFirstFloor		(All)
+Group gOutdoor			(All)
+Group gWeather			(All)
+Group gDashboard		(All)
+
+/* DATE */
+DateTime	TodaysDate	"Today's date is [%1$tA, %1$tB %1$td, %1$tY]"	<calendar>	{ ntp="America/New_York:en_EN" }
