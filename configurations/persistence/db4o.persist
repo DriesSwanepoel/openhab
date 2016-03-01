@@ -9,3 +9,8 @@ Strategies
 	everyDay	: "0 0 0 * * ?"
 	default = everyChange
 }
+
+Items
+{
+	TodaysDate : strategy = everyDay, restoreOnStartup
+}
