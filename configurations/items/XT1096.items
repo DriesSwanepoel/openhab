@@ -1,0 +1,16 @@
+// WEATHER
+String Weather_Condition		{ weather="locationId=lawrenceville, type=condition, property=commonId" }
+Number Weather_Temperature		{ weather="locationId=lawrenceville, type=temperature, property=current, unit=fahrenheit" }
+Number Weather_Precipitation	{ weather="locationId=lawrenceville, type=precipitation, property=probability" }
+Number Weather_Humidity			{ weather="locationId=lawrenceville, type=atmosphere, property=humidity" }
+Number Weather_Wind_Speed		{ weather="locationId=lawrenceville, type=wind, property=speed, unit=mph" }
+
+String Weather_Forecast_Day0_Condition			{ weather="locationId=lawrenceville, type=condition, forecast=0, property=commonId" }
+Number Weather_Forecast_Day0_Temperature_High	{ weather="locationId=lawrenceville, type=temperature, forecast=0, property=max, unit=fahrenheit" }
+Number Weather_Forecast_Day0_Temperature_Low	{ weather="locationId=lawrenceville, type=temperature, forecast=0, property=min, unit=fahrenheit" }
+String Weather_Forecast_Day1_Condition			{ weather="locationId=lawrenceville, type=condition, forecast=1, property=commonId" }
+Number Weather_Forecast_Day1_Temperature_High	{ weather="locationId=lawrenceville, type=temperature, forecast=1, property=max, unit=fahrenheit" }
+Number Weather_Forecast_Day1_Temperature_Low	{ weather="locationId=lawrenceville, type=temperature, forecast=1, property=min, unit=fahrenheit" }
+String Weather_Forecast_Day2_Condition			{ weather="locationId=lawrenceville, type=condition, forecast=2, property=commonId" }
+Number Weather_Forecast_Day2_Temperature_High	{ weather="locationId=lawrenceville, type=temperature, forecast=2, property=max, unit=fahrenheit" }
+Number Weather_Forecast_Day2_Temperature_Low	{ weather="locationId=lawrenceville, type=temperature, forecast=2, property=min, unit=fahrenheit" }

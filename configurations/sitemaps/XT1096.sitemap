@@ -1,0 +1,33 @@
+sitemap XT1096 label="Sudo's Place"
+{
+	Image label="{item:backdrop-portrait}" url="https://source.unsplash.com/category/technology/1080x1920"
+	
+	Text label="Dashboard"
+	{
+		Frame label="{widget:clock}"
+
+		Frame label="Lawerenceville {widget:weather-advanced}"
+		{
+			Text item=Weather_Condition label="{item:condition}"
+			Text item=Weather_Temperature label="{item:temperature}"
+			Text item=Weather_Precipitation label="{item:precipitation}"
+			Text item=Weather_Humidity label="{item:humidity}"
+			Text item=Weather_Wind_Speed label="{item:wind-speed,unit:mph}"
+		}
+		
+		Frame label="{widget:weather-forecast}"
+		{
+			Text item=Weather_Forecast_Day0_Condition label="{item:day0-condition}"
+			Text item=Weather_Forecast_Day0_Temperature_High label="{item:day0-temperature-high}"
+			Text item=Weather_Forecast_Day0_Temperature_Low label="{item:day0-temperature-low}"
+			Text item=Weather_Forecast_Day1_Condition label="{item:day1-condition}"
+			Text item=Weather_Forecast_Day1_Temperature_High label="{item:day1-temperature-high}"
+			Text item=Weather_Forecast_Day1_Temperature_Low label="{item:day1-temperature-low}"
+			Text item=Weather_Forecast_Day2_Condition label="{item:day2-condition}"
+			Text item=Weather_Forecast_Day2_Temperature_High label="{item:day2-temperature-high}"
+			Text item=Weather_Forecast_Day2_Temperature_Low label="{item:day2-temperature-low}"
+		}
+
+		Frame label="{widget:voice-command}"
+	}
+}
