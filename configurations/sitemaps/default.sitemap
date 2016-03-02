@@ -4,4 +4,10 @@ sitemap default label="Default Sitemap"
 	{
 		Text item=TodaysDate icon="calendar"
 	}
+	
+	Frame label="Yahoo Weather"
+	{
+		Text item=Weather_Condition icon="sun"
+		Group item=gWeather label="Yahoo Weather" icon="temperature"
+	}
 }

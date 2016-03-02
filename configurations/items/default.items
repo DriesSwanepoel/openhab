@@ -7,4 +7,21 @@ Group gWeather			(All)
 Group gDashboard		(All)
 
 /* DATE */
-DateTime	TodaysDate	"Today's date is [%1$tA, %1$tB %1$td, %1$tY]"	<calendar>	{ ntp="America/New_York:en_EN" }
+DateTime	TodaysDate	"Today's date is [%1$tA, %1$tB %1$td, %1$tY]"	<calendar>	(gDashboard)	{ ntp="America/New_York:en_EN" }
+
+// WEATHER
+String Weather_Condition		"The weather right now is [%s]"	<sun>			(gWeather)	{ weather="locationId=lawrenceville, type=condition, property=commonId" }
+Number Weather_Temperature		"Temperature [%.2f °F]"			<temperature>	(gWeather)	{ weather="locationId=lawrenceville, type=temperature, property=current, unit=fahrenheit" }
+Number Weather_Precipitation	"Rain probability [%d %%]"		<rain>			(gWeather)	{ weather="locationId=lawrenceville, type=precipitation, property=probability" }
+Number Weather_Humidity			"Humidity [%d %%]"				<temperature>	(gWeather)	{ weather="locationId=lawrenceville, type=atmosphere, property=humidity" }
+Number Weather_Wind_Speed		"Windspeed [%.2f mph]"			<wind>			(gWeather)	{ weather="locationId=lawrenceville, type=wind, property=speed, unit=mph" }
+
+String Weather_Forecast_Day0_Condition			"Today is [%s]"								<sun>			(gWeather)	{ weather="locationId=lawrenceville, type=condition, forecast=0, property=commonId" }
+Number Weather_Forecast_Day0_Temperature_High	"Today's high will be [%.2f °F]"			<temperature>	(gWeather)	{ weather="locationId=lawrenceville, type=temperature, forecast=0, property=max, unit=fahrenheit" }
+Number Weather_Forecast_Day0_Temperature_Low	"Today's low will be [%.2f °F]"				<temperature>	(gWeather)	{ weather="locationId=lawrenceville, type=temperature, forecast=0, property=min, unit=fahrenheit" }
+String Weather_Forecast_Day1_Condition			"Tomorrow will be [%s]"						<sun>			(gWeather)	{ weather="locationId=lawrenceville, type=condition, forecast=1, property=commonId" }
+Number Weather_Forecast_Day1_Temperature_High	"Tomorrow's high will be [%.2f °F]"			<temperature>	(gWeather)	{ weather="locationId=lawrenceville, type=temperature, forecast=1, property=max, unit=fahrenheit" }
+Number Weather_Forecast_Day1_Temperature_Low	"Tomorrow's low will be [%.2f °F]"			<temperature>	(gWeather)	{ weather="locationId=lawrenceville, type=temperature, forecast=1, property=min, unit=fahrenheit" }
+String Weather_Forecast_Day2_Condition			"Day after tomorrow will be [%s]"			<sun>			(gWeather)	{ weather="locationId=lawrenceville, type=condition, forecast=2, property=commonId" }
+Number Weather_Forecast_Day2_Temperature_High	"Day after tomorrow high will be [%.2f °F]"	<temperature>	(gWeather)	{ weather="locationId=lawrenceville, type=temperature, forecast=2, property=max, unit=fahrenheit" }
+Number Weather_Forecast_Day2_Temperature_Low	"Day after tomorrow low will be [%.2f °F]"	<temperature>	(gWeather)	{ weather="locationId=lawrenceville, type=temperature, forecast=2, property=min, unit=fahrenheit" }
